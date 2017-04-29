@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Geek Squad Laptops</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+    <script type="text/javascript" src="js/details.js"></script>
+
+
+
+
+</head>
+<body>
+<div class="nav-bar-header">
+    <!-- logo -->
+    <div class="nav-bar-children">
+       <a href="proj3.html" > <span class="search-text nav-logo">Geek Squad Laptops</span> </a>
+        <!--Search Bar-->
+        <form id="search" class="display-flex">
+            <input type="text" id="searchText" class="search-bar" placeholder="Search for Products" />
+            <button type="submit" class="button-search"><i class="fa fa-search" ></i></button>
+        </form>
+        <span id="cartButton"></span>
+
+    </div>
+</div>
+
+<div class="container-main">
+    <div id="overlay">
+        <div class="loader"></div>
+    </div>
+    <div id="snackbar"><div id="snackText"></div></div>
+    <div class="col-4 float-left">
+
+        <div class="card">
+           <h2 class="card-title-image">Product Image</h2>
+            <div class="container">
+                <div id="imgPlace">
+
+                </div>
+
+                <hr class="hr-light" />
+                <div id="cart-button">
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-8 float-right">
+
+            <div class="card">
+                <div class="product-details">
+                    <div id="productDetails">
+
+                    </div>
+
+
+                     <button type="button" id="continue" class="btn-details">Continue Shopping</button>
+
+
+                </div>
+            </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Geek Squad Laptops</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+    <script type="text/javascript" src="js/checkout.js"></script>
+
+
+</head>
+<body>
+<div class="nav-bar-header">
+    <!-- logo -->
+    <div class="nav-bar-children">
+       <a href="proj3.html"> <span class="search-text nav-logo">Geek Squad Laptops</span></a>
+        &nbsp;- Checkout
+    </div>
+</div>
+<div id="overlay">
+    <div class="loader"></div>
+</div>
+<div class="container-main-search" id="success">
+
+    <div class="cart-card">
+        <p class="cart-title bold-black header"><a href="proj3.html">HOME</a> > MESSAGE PANEL</p> 
+        <hr class="hr-light"/>
+        <div class="cart-product-details" >
+            <p class="bold-black " style="text-align: center">We have placed your order. Your order will be shipped within 3 business days.</p>
+            
+
+            <img  src="uploads/success.png" class="cart-image"  />
+        </div>
+       <a href="proj3.html"><button class="btn-details" style="margin-left: 37%">Continue Shopping</button></a>
+    </div>
+
+</div>
+
+<div class="container-main-search" id="checkout-forms">
+
+
+    <div class="cart-card">
+        <p class="cart-title bold-black header" >CHECKOUT FORM</p>
+
+        <span class="cart-title bold-black ">1. Shipping Information</span>
+        <hr class="hr-shadow"/>
+        <div class="cart-product-details" id="div-shippingform">
+            <form id="shipping-form">
+                 <table>
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="sf_firstname" required placeholder="First Name" />
+                    </td>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="sf_lastname" required  placeholder="Last Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email ID
+                    </td>
+                    <td>
+                        <input type="email" name="checkout" required id="sf_email"  placeholder="john.doe@xyz.com" />
+                    </td>
+                    <td>
+                        Phone
+                    </td>
+                    <td>
+                        <input type="number" name="checkout"  placeholder="619639xxxx" id="sf_phone"  required />
+                    </td>
+                </tr>
+                <tr>
+                    <td> Address</td>
+                    <td colspan="4"> <input type="text" name="checkout" id="sf_address" required  placeholder="Street Name, Apt #" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        City
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="sf_city" required  placeholder="San Diego" />
+                    </td>
+                    <td>
+                       State
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="sf_state" required  placeholder="California"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="sf_country" required  placeholder="United States" />
+                    </td>
+                    <td>
+                        ZIP 
+                    </td>
+                    <td>
+                        <input type="number" name="checkout" id="sf_zipcode" required  placeholder="92115"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td> </td> <td> </td><td></td>
+                    <td>
+                        <input type="submit" class="btn-checkout" value="NEXT" />
+                    </td>
+                </tr>
+            </table>
+
+            </form>
+
+        </div>
+        <hr class="hr-shadow"/>
+        <span class="cart-title bold-black">2. Billing Information</span>
+        <hr class="hr-shadow"/>
+
+        <div class="cart-product-details"  id="div-billingform" >
+            <input type="checkbox" id="same-shipping" /> <span class="bold-black"> Same as Shipping Address? </span>
+            <form id="billing-form">
+            <table>
+
+                <tr>
+                    <td>
+                        First Name
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="bf_firstname" required placeholder="First Name" />
+                    </td>
+                    <td>
+                        Last Name
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="bf_lastname" required placeholder="Last Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email ID
+                    </td>
+                    <td>
+                        <input type="email" name="checkout" id="bf_email" required placeholder="john.doe@xyz.com" />
+                    </td>
+                    <td>
+                        Phone
+                    </td>
+                    <td>
+                        <input type="number" name="checkout" id="bf_phone" required placeholder="xxx-xxx-xxxx" maxlength="10"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Address</td>
+                    <td colspan="4"> <input type="text" name="checkout" id="bf_address" required placeholder="Street Name, Apt #" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        City
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="bf_city" required placeholder="San Diego" />
+                    </td>
+                    <td>
+                        State
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="bf_state" required placeholder="California"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Country
+                    </td>
+                    <td>
+                        <input type="text" name="checkout" id="bf_country" required placeholder="United States" />
+                    </td>
+                    <td>
+                        ZIP
+                    </td>
+                    <td>
+                        <input type="number" name="checkout" id="bf_zipcode" required placeholder="92115"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <button class="btn-cancel" id="btnBillingBack">BACK</button>
+
+                    </td>
+                    <td>
+                        <input type="submit" class="btn-checkout" value="NEXT" />
+                    </td>
+                </tr>
+            </table>
+            </form>
+
+        </div>
+        <hr class="hr-shadow"/>
+        <span class="cart-title bold-black">3. Payment Information</span>
+        <hr class="hr-shadow"/>
+
+        <div class="cart-product-details"  id="div-ccform" >
+            <form id="ccform">
+            <table class="ccdesign">
+                <tr>
+                    <td colspan="3">
+                        <input type="number" name="checkout" id="card_number" required placeholder="Card Number" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="number" name="checkout" id="card_exp" required placeholder="MMYYYY (Expiry)"/>
+
+                    </td>
+
+                    <td>
+                        <input type="number" name="checkout" id="card_cvv" required placeholder="CVV" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" name="checkout" id="card_name" required placeholder="Name on card" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+
+
+                    </td>
+                    <td>
+                        <button class="btn-cancel" id="btnccBack" >BACK</button>
+                    </td>
+                    <td>
+                        <input type="submit" class="btn-checkout" value="NEXT" />
+                    </td>
+
+                </tr>
+
+
+            </table>
+            </form>
+
+        </div>
+
+        <hr class="hr-shadow"/>
+        <span class="cart-title bold-black">4. Order Summary</span>
+        <hr class="hr-shadow"/>
+
+        <div class="cart-product-details"  id="div-ordersummary">
+            <div id="displaySummary">
+
+            </div>
+
+            <table >
+                <tr>
+                    <td>
+                        <button type="button" id="btnSummarBack" class="btn-back">BACK</button>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Total Amount due
+                    </td>
+                    <td>
+                        <span class="final-amount" id="final-amount"></span>
+                    </td>
+                    <td>
+                        <button type="button" id="btnCancel" class="btn-cancel">CANCEL</button>
+                    </td>
+                    <td>
+                    <form id="order-summary">
+                        <input type="submit" class="btn-orange" value="CHECKOUT NOW">
+                    </form>
+
+                    </td>
+                </tr>
+            </table>
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

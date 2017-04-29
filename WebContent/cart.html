@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Geek Squad Laptops</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+
+
+
+</head>
+<body>
+<div class="nav-bar-header">
+    <!-- logo -->
+    <div class="nav-bar-children">
+        <a href="proj3.html"> <span class="search-text nav-logo">Geek Squad Laptops</span></a>
+        <!--Search Bar-->
+        <form id="search" class="display-flex">
+            <input type="text" id="searchText" class="search-bar" placeholder="Search for Products" />
+            <button type="submit" class="button-search"><i class="fa fa-search" ></i></button>
+        </form>
+
+
+    </div>
+</div>
+<div id="overlay">
+    <div class="loader"></div>
+</div>
+<div id="snackbar"><div id="snackText"></div></div>
+<div class="container-main-search" id="empty-cart">
+
+    <div class="cart-card">
+        <p class="cart-title bold-black">MY CART(0)</p>
+        <hr class="hr-light"/>
+        <div class="cart-product-details" >
+            <p class="bold-black " style="text-align: center"> You cart is empty</p>
+           <img  src="uploads/empty-cart.png" class="cart-image"  />
+        </div>
+    </div>
+
+</div>
+<div class="container-main" id="fill-cart" >
+
+    <div class="cart-body ">
+        <div class="cart-card">
+            <p class="cart-title bold-black">MY CART - Use the arrows in the input field to increase / decrease quantity</p>
+            <hr class="hr-light"/>
+        <div id="cartItems">
+
+        </div>
+
+            <hr class="hr-shadow"/>
+
+            <div class="card-body">
+                <button class="btn-order" id="placeOrder">PLACE ORDER</button>
+                <button class="btn-shopping" id="continueShopping">CONTINUE SHOPPING</button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="price-body " id="summary">
+
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>

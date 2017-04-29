@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Geek Squad Laptops</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js" ></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+
+</head>
+<body>
+<div class="nav-bar-header">
+    <!-- logo -->
+    <div class="nav-bar-children">
+       <a href="proj3.html"> <span class="search-text nav-logo">Geek Squad Laptops</span> </a>
+        <!--Search Bar-->
+        <form id="search" class="display-flex">
+            <input type="text" id="searchText" class="search-bar" placeholder="Search for Products" />
+            <button type="submit" class="button-search"><i class="fa fa-search" ></i></button>
+        </form>
+
+       <span id="cartButton"></span>
+
+        <!--<button type="button" onclick="myFunction()">Click me</button>-->
+        <!--Cart Button-->
+    </div>
+</div>
+
+<div class="container-main">
+    <div id="overlay">
+        <div class="loader"></div>
+    </div>
+    <div id="snackbar"><div id="snackText"></div></div>
+    <div class="col-filter">
+
+        <div class="card">
+
+            <div class="container" id="filterCheckBox">
+
+                <p id="filters">Filters</p>
+                <button class="filter">BRAND </button>
+                <div class="filter-panel">
+                    <div id="brandCheckBox">
+
+                    </div>
+
+                </div>
+                <button class="filter">CATEGORY </button>
+                <div class="filter-panel">
+                    <div id ="categoryCheckBox">
+
+                    </div>
+
+                </div>
+                <button class="filter">AVAILABILITY </button>
+                <div class="filter-panel">
+                    <p> <input type="checkbox" id="chk1" value="avail_available"/> <span>Available</span></p>
+                    <p><input type="checkbox" id="chk2" value="avail_outstock"/> <span>More on the way</span></p>
+                    <input type="checkbox" id="chk3" value="avail_coming"/> <span>Coming soon</span>
+                </div>
+                <!--<button class="filter">PRICE RANGE </button>-->
+                <!--<div class="filter-panel">-->
+                    <!--PLace check box here-->
+                <!--</div>-->
+
+            </div>
+        </div>
+    </div>
+    <div class="col-products">
+
+        <h3>Laptops > Results - <span id="resultCount"></span></h3>
+        <div id="products">
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src ="js/accordion.js"> 
+</script>
+
+</body>
+</html>
